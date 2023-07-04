@@ -1,0 +1,42 @@
+/* ___Container containing all the 'Row Poster'___ */
+.row_posters {
+  /* Change column to row */
+  display: flex;
+  /* Don't let it scroll the vertical axis */
+  overflow-y: hidden;
+  /* Let it scroll the horizontal axis */
+  overflow-x: scroll;
+  /* Avoid cropping, on zooming while the scroll */
+  padding: 20px;
+}
+/* Tell all the browsers, to hide the scroll slider, but keep the functionality alive */
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+/* ___Row Poster (Individual)___ */
+.row_poster {
+  /* This property tells the content to "preserve that aspect ratio" or "stretch up and take up as much space as possible" */
+  object-fit: contain;
+  /* For uniform width */
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+.row_poster:hover {
+  /* Little zoom on hovering */
+  transform: scale(1.1);
+}
+
+/* ___Styling for 'isLargeRow'___ */
+.row_posterLarge {
+  max-height: 250px;
+}
+.row_posterLarge:hover {
+  transform: scale(1.15);
+}
+
+.rows {
+  color: white;
+}

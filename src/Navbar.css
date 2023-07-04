@@ -1,0 +1,36 @@
+.navbar {
+  /* To fix navbar's position,even if you scroll it would be fixed to the top */
+  position: fixed;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  /* Put 'avatar' on right hand side of th navbar */
+  justify-content: space-between;
+  /* background-color: aliceblue; */
+  /* Always at top */
+  z-index: 1;
+
+  /* Animations */
+  /* For smooth transition */
+  transition-timing-function: ease-in;
+  /* A little delay in the animations */
+  transition: all 0.5s;
+}
+
+.navbar-black {
+  background-color: black;
+}
+
+.navbar-logo {
+  padding-left: 20px;
+  width: 100px;
+  /* maintain aspect ratio */
+  object-fit: contain;
+}
+
+.navbar-avatar {
+  padding-right: 20px;
+  width: 100px;
+  /* Maintain aspect ratio */
+  object-fit: contain;
+}
